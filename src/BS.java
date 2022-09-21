@@ -1,5 +1,5 @@
 public class BS {
-    int binarySearch(int arr[], int leftSide, int rightSide, int numberWeAreLookingFor){
+    int binarySearch(int[] arr, int leftSide, int rightSide, int numberWeAreLookingFor){
         if (rightSide >=leftSide) {
             int middleOfList = leftSide + (rightSide - leftSide) / 2;
 
@@ -19,7 +19,7 @@ public class BS {
 
     public static void main(String[] args) {
         BS binary = new BS();
-        int arr [] = {2,10,11,34,80,99};
+        int[] arr = {2,10,11,34,80,99};
         int x = 99;
         int result = binary.binarySearch(arr,0,arr.length-1,x);
         if (result == -1) {
